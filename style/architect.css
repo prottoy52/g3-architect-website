@@ -9,3 +9,170 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* shared style */
+
+.display-flex{
+    display: flex;
+}
+
+.primary{
+    background-color: #ff900e;
+    color:white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.text-primary{
+    color: #ff900e;
+}
+
+.text-gray{
+    color: #424242;  /*drak 02 */
+}
+
+.text-light-gray{
+    color: #727272;  /*dark 03*/
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* header style*/
+
+.bg-light{
+    background-color: rgba(255,144,14,0.1);
+}
+
+
+
+/* nav style*/
+.navbar{
+   justify-content: space-between;
+   align-items: center;
+}
+
+.brand{
+    font-weight: 700;
+    font-size:3rem;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar , .banner{
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+/*banner related styles*/
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title{
+    font-weight: 700px;
+    font-size: 4rem;
+}
+
+.image-banner{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+/*team & feature style*/
+
+.teams{
+align-items: center;
+}
+
+.team-images-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+main > section{
+    margin-top: 133px;
+}
+
+.features-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.team-features{
+   margin-left: 130px;
+   max-width: 530px;
+  
+}
+
+
+
+
+
+
+
+
+/*responsive media query*/
+
+@media screen and (max-width:576px){
+    .navbar,
+     .nav-links, .teams{
+        flex-direction: column;
+     }
+
+    .team-images-container{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .team-features{
+        margin-left:20px ;
+    }
+}
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .team-features{
+        margin-left:50px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
